@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "setup": "npm ci",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "ng test --browsers ChromeHeadless --watch false --progress false --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -42,6 +43,8 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.5.3"
+    "typescript": "~3.5.3",
+    "karma-junit-reporter": "^1.2.0",
+    "karma-spec-reporter": "0.0.32"
   }
 }
