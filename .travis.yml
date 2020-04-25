@@ -6,8 +6,8 @@ services:
 before_install:
     - docker build -t vijay01/dockeraws .
 
-script:
-    - docker run vijay01/dockeraws npm run test
+# script:
+#     - docker run vijay01/dockeraws npm run test
 
 deploy:
     region: us-west-2
