@@ -1,13 +1,10 @@
 sudo: required
-
+language: generic
 services: 
     - docker
 
 before_install:
     - docker build -t vijay01/dockeraws .
-
-script:
-    - docker run vijay01/dockeraws npm run test
 
 deploy:
     region: us-west-2
@@ -15,7 +12,7 @@ deploy:
     bucket-name: elasticbeanstalk-us-west-2-277569349877
     bucket-path: DockerAws
     app: DockerAws
-    env: Dockeraws-env
+    env: Dockeraws-env-1
     on:
         branch: master
     secret-access-key: $AWS_SECREAT_KEY
