@@ -6,8 +6,8 @@ services:
 before_install:
     - docker build -t vijay01/dockeraws .
 
-    script:
-    - docker run -e CI=true vijay01/dockeraws
+# script:
+#     - docker run -e CI=true vijay01/dockeraws 
 
 deploy:
     region: us-west-2
