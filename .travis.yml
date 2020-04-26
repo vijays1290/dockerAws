@@ -1,13 +1,13 @@
 sudo: required
-language: node_js
+language: generic
 services: 
     - docker
 
 before_install:
     - docker build -t vijay01/dockeraws .
 
-script:
-    - docker exec -it vijay01/dockeraws npm run test 
+# script:
+#     - docker run -e CI=true vijay01/dockeraws 
 
 deploy:
     region: us-west-2
