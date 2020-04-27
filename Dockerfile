@@ -1,4 +1,4 @@
-FROM node:10.15.3 as build
+FROM node:10.15.3
 ## SETUP PUPPETEER - https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md
 
 # See https://crbug.com/795759
