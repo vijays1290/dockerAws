@@ -15,7 +15,7 @@ deploy:
     bucket-name: elasticbeanstalk-us-west-2-277569349877
     bucket-path: DockerAws
     app: DockerAws
-    env: DockerAws-env
+    env: Dockeraws-env
     on:
         branch: master
     secret-access-key: $AWS_SECREAT_KEY
